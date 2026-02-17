@@ -1,15 +1,9 @@
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <img src="banner.jpg" class="img-responsive" style="width:80%; margin: 0 auto 40px; display:block;"/>
-    </div>
-</section>
-
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color:#875A7B;">Step 1: Enable from POS Configuration</h2>
         <h3 class="oe_slogan">Go to Point of Sale &rarr; Select your POS &rarr; Enable the setting</h3>
-        <div class="oe_span6">
-            <img class="oe_picture oe_screenshot" src="1_pos_config.png">
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="1_pos_config.png">
         </div>
         <div class="oe_span6 oe_mt32">
             <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
@@ -17,14 +11,13 @@
                 <p>Check this option to prevent sales of products with zero or negative stock levels.
                 When enabled, the POS will block payment if any product in the order has insufficient stock.</p>
             </div>
+        </div>
+        <div class="oe_span6 oe_mt32">
             <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
                 <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Show Warning Per Product</p>
                 <p>When checked, a separate warning dialog is displayed for each out-of-stock product individually.
                 When unchecked, all restricted products are shown in one combined dialog.</p>
             </div>
-            <p class="text-muted">
-                <em>Each POS configuration (Furniture Shop, Clothes Shop, Bakery Shop, etc.) can have its own independent setting.</em>
-            </p>
         </div>
     </div>
 </section>
@@ -33,20 +26,22 @@
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color:#875A7B;">Step 2: Product with Zero Stock On Hand</h2>
         <h3 class="oe_slogan">The module detects storable products with 0.00 available quantity</h3>
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="2_onhand.png">
+        </div>
         <div class="oe_span6 oe_mt32">
             <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
                 <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">On Hand: 0.00 Units</p>
                 <p>The product <b>"Large Desk"</b> has <b>0.00 Units</b> on hand in the warehouse.
                 When a cashier tries to sell this product, the module will block the payment.</p>
             </div>
+        </div>
+        <div class="oe_span6 oe_mt32">
             <div style="border-left: 4px solid #875A7B; padding-left: 16px; margin-bottom: 20px;">
                 <p style="font-weight: bold;">Smart Detection</p>
                 <p>Only <b>storable products</b> (Product Type: Goods, Track Inventory: By Quantity) are validated.
                 Services and non-inventory items are never restricted.</p>
             </div>
-        </div>
-        <div class="oe_span6">
-            <img class="oe_picture oe_screenshot" src="2_onhand.png">
         </div>
     </div>
 </section>
@@ -55,8 +50,8 @@
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color:#875A7B;">Step 3: Payment Blocked with Warning</h2>
         <h3 class="oe_slogan">Cashier sees a clear warning when trying to pay for out-of-stock items</h3>
-        <div class="oe_span6">
-            <img class="oe_picture oe_screenshot" src="3_warning_screenshot.png">
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="3_warning_screenshot.png">
         </div>
         <div class="oe_span6 oe_mt32">
             <div style="border: 2px solid #E74C3C; border-radius: 6px; padding: 16px; margin-bottom: 20px; background: #FDF2F2;">
@@ -64,7 +59,9 @@
                 <p>The following products are out of stock:</p>
                 <p style="font-weight: bold;">Large Desk (available: 0, required: 1)</p>
             </div>
-            <p class="oe_mt16 text-justify">
+        </div>
+        <div class="oe_span6 oe_mt32">
+            <p class="text-justify">
             The warning clearly shows the <b>product name</b>, <b>available quantity</b> and <b>required quantity</b>
             so the cashier knows exactly what to do. Payment is completely blocked until the restricted
             products are removed from the order.
