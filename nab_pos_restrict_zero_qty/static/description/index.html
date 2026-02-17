@@ -1,0 +1,116 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <img src="banner.jpg" class="img-responsive" style="width:80%; margin: 0 auto 40px; display:block;"/>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Step 1: Enable from POS Configuration</h2>
+        <h3 class="oe_slogan">Go to Point of Sale &rarr; Select your POS &rarr; Enable the setting</h3>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="1_pos_config.png">
+        </div>
+        <div class="oe_span6 oe_mt32">
+            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
+                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Zero Quantity Product Validation</p>
+                <p>Check this option to prevent sales of products with zero or negative stock levels.
+                When enabled, the POS will block payment if any product in the order has insufficient stock.</p>
+            </div>
+            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
+                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Show Warning Per Product</p>
+                <p>When checked, a separate warning dialog is displayed for each out-of-stock product individually.
+                When unchecked, all restricted products are shown in one combined dialog.</p>
+            </div>
+            <p class="text-muted">
+                <em>Each POS configuration (Furniture Shop, Clothes Shop, Bakery Shop, etc.) can have its own independent setting.</em>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Step 2: Product with Zero Stock On Hand</h2>
+        <h3 class="oe_slogan">The module detects storable products with 0.00 available quantity</h3>
+        <div class="oe_span6 oe_mt32">
+            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
+                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">On Hand: 0.00 Units</p>
+                <p>The product <b>"Large Desk"</b> has <b>0.00 Units</b> on hand in the warehouse.
+                When a cashier tries to sell this product, the module will block the payment.</p>
+            </div>
+            <div style="border-left: 4px solid #875A7B; padding-left: 16px; margin-bottom: 20px;">
+                <p style="font-weight: bold;">Smart Detection</p>
+                <p>Only <b>storable products</b> (Product Type: Goods, Track Inventory: By Quantity) are validated.
+                Services and non-inventory items are never restricted.</p>
+            </div>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="2_onhand.png">
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Step 3: Payment Blocked with Warning</h2>
+        <h3 class="oe_slogan">Cashier sees a clear warning when trying to pay for out-of-stock items</h3>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="3_warning_screenshot.png">
+        </div>
+        <div class="oe_span6 oe_mt32">
+            <div style="border: 2px solid #E74C3C; border-radius: 6px; padding: 16px; margin-bottom: 20px; background: #FDF2F2;">
+                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Restricted Products</p>
+                <p>The following products are out of stock:</p>
+                <p style="font-weight: bold;">Large Desk (available: 0, required: 1)</p>
+            </div>
+            <p class="oe_mt16 text-justify">
+            The warning clearly shows the <b>product name</b>, <b>available quantity</b> and <b>required quantity</b>
+            so the cashier knows exactly what to do. Payment is completely blocked until the restricted
+            products are removed from the order.
+            </p>
+            <p class="text-justify">
+            If the same product appears on multiple order lines, quantities are <b>aggregated</b> before
+            checking — ensuring accurate stock comparison.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Key Highlights</h2>
+        <div class="oe_span4 text-center">
+            <span class="fa fa-check-circle fa-3x" style="color:#875A7B;"></span>
+            <h4 class="oe_mt16"><b>Odoo 18 Ready</b></h4>
+            <p>Works with both Community and Enterprise editions of Odoo 18.</p>
+        </div>
+        <div class="oe_span4 text-center">
+            <span class="fa fa-cog fa-3x" style="color:#875A7B;"></span>
+            <h4 class="oe_mt16"><b>Per-POS Config</b></h4>
+            <p>Different POS shops can have different stock restriction settings.</p>
+        </div>
+        <div class="oe_span4 text-center">
+            <span class="fa fa-shield fa-3x" style="color:#875A7B;"></span>
+            <h4 class="oe_mt16"><b>Lightweight</b></h4>
+            <p>Only 2 boolean fields added. No heavy dependencies or performance impact.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Need Help?</h2>
+        <h3 class="oe_slogan">For support, bug reports, or feature requests</h3>
+        <p class="oe_slogan">
+            <b>Email:</b> <a href="mailto:numanabdullah758@gmail.com">numanabdullah758@gmail.com</a><br/>
+            <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/numan-abdullah/" target="_blank">linkedin.com/in/numan-abdullah</a>
+        </p>
+        <p class="oe_slogan" style="font-size:14px; color:#888;">
+            If you find this module useful, please leave a rating on the Odoo App Store!
+        </p>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>

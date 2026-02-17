@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="nab_pos_config_view_form" model="ir.ui.view">
+        <field name="name">pos.config.form.inherit.nab.restrict.zero.qty</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_settings_container')][2]/setting[@id='other_devices']" position="before">
+                <setting id="nab_enable_pos_restrict_zero_qty"
+                         string="Zero Quantity Product Validation"
+                         help="Prevent sales of products with zero or negative stock levels.">
+                    <field name="enable_pos_restrict_zero_qty"/>
+                </setting>
+                <setting id="nab_enable_per_product_warning"
+                         string="Show Warning Per Product"
+                         help="Display a separate warning for each out-of-stock product instead of one combined dialog."
+                         invisible="not enable_pos_restrict_zero_qty">
+                    <field name="enable_per_product_warning"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
