@@ -45,6 +45,7 @@ Use Cases
         ],
     },
     'images': [
+        'images/banner.jpg',
         'images/1_pos_config.png',
         'images/2_onhand.png',
         'images/3_warning_screenshot.png',
