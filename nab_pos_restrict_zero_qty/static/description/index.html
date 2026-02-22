@@ -69,18 +69,20 @@
         <div style="text-align:center;">
             <img src="1_pos_config.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
         </div>
-        <div class="oe_span6 oe_mt32">
-            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
-                <p style="font-size:15px; font-weight:600; color:#875A7B;">Zero Quantity Product Validation</p>
-                <p>Check this option to prevent sales of products with zero or negative stock levels.
-                When enabled, the POS will block payment if any product in the order has insufficient stock.</p>
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <div style="border-left:4px solid #875A7B; padding-left:16px;">
+                    <p style="font-size:15px; font-weight:600; color:#875A7B;">Zero Quantity Product Validation</p>
+                    <p>Check this option to prevent sales of products with zero or negative stock levels.
+                    When enabled, the POS will block payment if any product in the order has insufficient stock.</p>
+                </div>
             </div>
-        </div>
-        <div class="oe_span6 oe_mt32">
-            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
-                <p style="font-size:15px; font-weight:600; color:#875A7B;">Show Warning Per Product</p>
-                <p>When checked, a separate warning dialog is displayed for each out-of-stock product individually.
-                When unchecked, all restricted products are shown in one combined dialog.</p>
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <div style="border-left:4px solid #875A7B; padding-left:16px;">
+                    <p style="font-size:15px; font-weight:600; color:#875A7B;">Show Warning Per Product</p>
+                    <p>When checked, a separate warning dialog is displayed for each out-of-stock product individually.
+                    When unchecked, all restricted products are shown in one combined dialog.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -97,18 +99,20 @@
         <div style="text-align:center;">
             <img src="2_onhand.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
         </div>
-        <div class="oe_span6 oe_mt32">
-            <div style="border-left:4px solid #E74C3C; padding-left:16px; margin-bottom:20px;">
-                <p style="font-size:15px; font-weight:600; color:#E74C3C;">On Hand: 0.00 Units</p>
-                <p>The product <b>"Large Desk"</b> has <b>0.00 Units</b> on hand in the warehouse.
-                When a cashier tries to sell this product, the module will block the payment.</p>
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <div style="border-left:4px solid #E74C3C; padding-left:16px;">
+                    <p style="font-size:15px; font-weight:600; color:#E74C3C;">On Hand: 0.00 Units</p>
+                    <p>The product <b>"Large Desk"</b> has <b>0.00 Units</b> on hand in the warehouse.
+                    When a cashier tries to sell this product, the module will block the payment.</p>
+                </div>
             </div>
-        </div>
-        <div class="oe_span6 oe_mt32">
-            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
-                <p style="font-weight:600;">Smart Detection</p>
-                <p>Only <b>storable products</b> (Product Type: Goods, Track Inventory: By Quantity) are validated.
-                Services and non-inventory items are never restricted.</p>
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <div style="border-left:4px solid #875A7B; padding-left:16px;">
+                    <p style="font-weight:600;">Smart Detection</p>
+                    <p>Only <b>storable products</b> (Product Type: Goods, Track Inventory: By Quantity) are validated.
+                    Services and non-inventory items are never restricted.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -125,19 +129,21 @@
         <div style="text-align:center;">
             <img src="3_warning.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
         </div>
-        <div class="oe_span6 oe_mt32">
-            <div style="border:2px solid #E74C3C; border-radius:6px; padding:16px; margin-bottom:20px; background:#FDF2F2;">
-                <p style="font-size:15px; font-weight:600; color:#E74C3C;">Restricted Products</p>
-                <p>The following products are out of stock:</p>
-                <p style="font-weight:600;">Large Desk (available: 0, required: 1)</p>
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <div style="border:2px solid #E74C3C; border-radius:6px; padding:16px; background:#FDF2F2;">
+                    <p style="font-size:15px; font-weight:600; color:#E74C3C;">Restricted Products</p>
+                    <p>The following products are out of stock:</p>
+                    <p style="font-weight:600;">Large Desk (available: 0, required: 1)</p>
+                </div>
             </div>
-        </div>
-        <div class="oe_span6 oe_mt32">
-            <p class="text-justify">
-            The warning clearly shows the <b>product name</b>, <b>available quantity</b> and <b>required quantity</b>
-            so the cashier knows exactly what to do. Payment is completely blocked until the restricted
-            products are removed from the order.
-            </p>
+            <div class="col-md-6 col-sm-12" style="margin-bottom:20px;">
+                <p class="text-justify">
+                The warning clearly shows the <b>product name</b>, <b>available quantity</b> and <b>required quantity</b>
+                so the cashier knows exactly what to do. Payment is completely blocked until the restricted
+                products are removed from the order.
+                </p>
+            </div>
         </div>
     </div>
 </section>
