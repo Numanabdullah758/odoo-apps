@@ -1,36 +1,41 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'POS Restrict Zero Quantity',
+    'name': 'POS Out of Stock Validation - Block Zero Quantity Sales',
     'version': '18.0.1.0.0',
     'category': 'Sales/Point of Sale',
-    'summary': 'Prevent selling out-of-stock products in POS with configurable warnings',
+    'summary': 'Block POS payment for out-of-stock products with real-time '
+               'stock check, zero quantity restriction & configurable warnings',
     'description': """
-POS Restrict Zero Quantity
-==========================
+POS Out of Stock Validation
+===========================
 
-Prevent the sale of products with zero or negative stock levels directly
-from the Point of Sale interface.
+Prevent overselling by blocking Point of Sale payments for products with
+zero or negative stock. Real-time warehouse stock check at checkout.
+
+Why This Module?
+----------------
+* Cashiers accidentally sell products that are out of stock
+* Inventory mismatches cause fulfillment problems
+* You need real-time stock enforcement at the POS — not end-of-day surprises
 
 Key Features
 ------------
-* **Block Out-of-Stock Sales** - Automatically prevents payment when order
+* **Block Out-of-Stock Sales** — Automatically prevents payment when order
   contains products with zero or negative available quantity.
-* **Real-Time Stock Check** - Fetches live warehouse stock data at the moment
+* **Real-Time Stock Check** — Fetches live warehouse stock data at the moment
   of payment, not stale cached values.
-* **Combined or Per-Product Warnings** - Choose between a single summary
+* **Combined or Per-Product Warnings** — Choose between a single summary
   dialog listing all restricted products, or individual pop-ups for each one.
-* **POS Config Toggle** - Enable/disable the restriction per POS configuration
+* **Per-POS Configuration** — Enable/disable the restriction per POS shop
   from Settings > Point of Sale.
-* **Consumable Product Aware** - Only checks consumable (storable) products;
-  services and non-inventory items pass through normally.
-* **Multi-Product Aggregation** - If the same product appears on multiple order
+* **Smart Product Detection** — Only validates storable products; services
+  and non-inventory items pass through normally.
+* **Multi-Line Aggregation** — If the same product appears on multiple order
   lines, quantities are aggregated before checking against available stock.
 
-Use Cases
----------
-* Retail stores that must not oversell physical inventory.
-* Warehouses using POS for dispatch that need strict stock discipline.
-* Any business that wants real-time stock validation at checkout.
+Keywords: pos stock, pos inventory, pos out of stock, pos zero quantity,
+pos restrict, pos block payment, pos stock check, pos stock validation,
+point of sale stock, point of sale inventory check, pos oversell prevention
     """,
     'author': 'Numan Abdullah',
     'website': 'https://www.linkedin.com/in/numan-abdullah/',
@@ -51,6 +56,8 @@ Use Cases
         'images/3_warning.png',
     ],
     'license': 'LGPL-3',
+    'price': 0,
+    'currency': 'USD',
     'installable': True,
     'auto_install': False,
     'application': False,

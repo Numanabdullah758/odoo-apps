@@ -1,18 +1,84 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="text-center" style="padding: 30px 0;">
+            <img src="banner.jpg" class="img-responsive" style="width:100%; max-width:1200px; margin:0 auto; display:block; border-radius:8px;">
+        </div>
+    </div>
+</section>
+
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#875A7B;">Step 1: Enable from POS Configuration</h2>
-        <h3 class="oe_slogan">Go to Point of Sale &rarr; Select your POS &rarr; Enable the setting</h3>
-        <img src="1_pos_config.png" class="img-responsive" style="width:90%; margin: 0 auto 20px; display:block;">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:28px; font-weight:700;">
+            Stop Overselling from Your POS
+        </h2>
+        <p class="oe_slogan" style="font-size:16px; color:#555; max-width:700px; margin:0 auto 30px;">
+            Automatically block payment when a customer's order contains out-of-stock products.
+            Real-time warehouse stock check — no more inventory surprises.
+        </p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:24px; font-weight:600;">Features at a Glance</h2>
+        <div class="row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; padding:0 20px;">
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-ban fa-3x" style="color:#E74C3C;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Block Out-of-Stock Sales</h4>
+                <p style="color:#666;">Payment is blocked when any product in the order has zero or negative available stock.</p>
+            </div>
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-refresh fa-3x" style="color:#3498DB;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Real-Time Stock Check</h4>
+                <p style="color:#666;">Fetches live warehouse data at the moment of payment — not stale cached values.</p>
+            </div>
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-cog fa-3x" style="color:#875A7B;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Per-POS Configuration</h4>
+                <p style="color:#666;">Enable or disable stock restriction independently for each POS shop.</p>
+            </div>
+        </div>
+        <div class="row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; padding:0 20px;">
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-exclamation-triangle fa-3x" style="color:#F39C12;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Flexible Warning Modes</h4>
+                <p style="color:#666;">Choose between a single combined dialog or individual per-product warnings.</p>
+            </div>
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-filter fa-3x" style="color:#27AE60;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Smart Product Detection</h4>
+                <p style="color:#666;">Only validates storable products. Services and non-inventory items pass through.</p>
+            </div>
+            <div class="col-sm-4" style="text-align:center; padding:20px;">
+                <span class="fa fa-cubes fa-3x" style="color:#2C3E50;"></span>
+                <h4 style="margin-top:12px; font-weight:600;">Multi-Line Aggregation</h4>
+                <p style="color:#666;">Same product on multiple order lines? Quantities are summed before validation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:24px; font-weight:600;">
+            Step 1: Enable from POS Configuration
+        </h2>
+        <p class="oe_slogan" style="color:#555;">
+            Go to <b>Point of Sale &rarr; Configuration &rarr; Settings</b> &rarr; Enable the restriction
+        </p>
+        <div style="text-align:center;">
+            <img src="1_pos_config.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        </div>
         <div class="oe_span6 oe_mt32">
-            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
-                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Zero Quantity Product Validation</p>
+            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
+                <p style="font-size:15px; font-weight:600; color:#875A7B;">Zero Quantity Product Validation</p>
                 <p>Check this option to prevent sales of products with zero or negative stock levels.
                 When enabled, the POS will block payment if any product in the order has insufficient stock.</p>
             </div>
         </div>
         <div class="oe_span6 oe_mt32">
-            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
-                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Show Warning Per Product</p>
+            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
+                <p style="font-size:15px; font-weight:600; color:#875A7B;">Show Warning Per Product</p>
                 <p>When checked, a separate warning dialog is displayed for each out-of-stock product individually.
                 When unchecked, all restricted products are shown in one combined dialog.</p>
             </div>
@@ -22,19 +88,25 @@
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#875A7B;">Step 2: Product with Zero Stock On Hand</h2>
-        <h3 class="oe_slogan">The module detects storable products with 0.00 available quantity</h3>
-        <img src="2_onhand.png" class="img-responsive" style="width:90%; margin: 0 auto 20px; display:block;">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:24px; font-weight:600;">
+            Step 2: Product with Zero Stock On Hand
+        </h2>
+        <p class="oe_slogan" style="color:#555;">
+            The module detects storable products with <b>0.00</b> available quantity in real time
+        </p>
+        <div style="text-align:center;">
+            <img src="2_onhand.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        </div>
         <div class="oe_span6 oe_mt32">
-            <div style="border-left: 4px solid #E74C3C; padding-left: 16px; margin-bottom: 20px;">
-                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">On Hand: 0.00 Units</p>
+            <div style="border-left:4px solid #E74C3C; padding-left:16px; margin-bottom:20px;">
+                <p style="font-size:15px; font-weight:600; color:#E74C3C;">On Hand: 0.00 Units</p>
                 <p>The product <b>"Large Desk"</b> has <b>0.00 Units</b> on hand in the warehouse.
                 When a cashier tries to sell this product, the module will block the payment.</p>
             </div>
         </div>
         <div class="oe_span6 oe_mt32">
-            <div style="border-left: 4px solid #875A7B; padding-left: 16px; margin-bottom: 20px;">
-                <p style="font-weight: bold;">Smart Detection</p>
+            <div style="border-left:4px solid #875A7B; padding-left:16px; margin-bottom:20px;">
+                <p style="font-weight:600;">Smart Detection</p>
                 <p>Only <b>storable products</b> (Product Type: Goods, Track Inventory: By Quantity) are validated.
                 Services and non-inventory items are never restricted.</p>
             </div>
@@ -44,14 +116,20 @@
 
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#875A7B;">Step 3: Payment Blocked with Warning</h2>
-        <h3 class="oe_slogan">Cashier sees a clear warning when trying to pay for out-of-stock items</h3>
-        <img src="3_warning.png" class="img-responsive" style="width:90%; margin: 0 auto 20px; display:block;">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:24px; font-weight:600;">
+            Step 3: Payment Blocked with Warning
+        </h2>
+        <p class="oe_slogan" style="color:#555;">
+            Cashier sees a clear warning when trying to pay for out-of-stock items
+        </p>
+        <div style="text-align:center;">
+            <img src="3_warning.png" class="img-responsive" style="width:85%; max-width:900px; margin:0 auto 20px; display:block; border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        </div>
         <div class="oe_span6 oe_mt32">
-            <div style="border: 2px solid #E74C3C; border-radius: 6px; padding: 16px; margin-bottom: 20px; background: #FDF2F2;">
-                <p style="font-size: 16px; font-weight: bold; color: #E74C3C;">Restricted Products</p>
+            <div style="border:2px solid #E74C3C; border-radius:6px; padding:16px; margin-bottom:20px; background:#FDF2F2;">
+                <p style="font-size:15px; font-weight:600; color:#E74C3C;">Restricted Products</p>
                 <p>The following products are out of stock:</p>
-                <p style="font-weight: bold;">Large Desk (available: 0, required: 1)</p>
+                <p style="font-weight:600;">Large Desk (available: 0, required: 1)</p>
             </div>
         </div>
         <div class="oe_span6 oe_mt32">
@@ -60,45 +138,47 @@
             so the cashier knows exactly what to do. Payment is completely blocked until the restricted
             products are removed from the order.
             </p>
-            <p class="text-justify">
-            If the same product appears on multiple order lines, quantities are <b>aggregated</b> before
-            checking — ensuring accurate stock comparison.
-            </p>
         </div>
     </div>
 </section>
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#875A7B;">Key Highlights</h2>
-        <div class="oe_span4 text-center">
-            <span class="fa fa-check-circle fa-3x" style="color:#875A7B;"></span>
-            <h4 class="oe_mt16"><b>Odoo 18 Ready</b></h4>
-            <p>Works with both Community and Enterprise editions of Odoo 18.</p>
-        </div>
-        <div class="oe_span4 text-center">
-            <span class="fa fa-cog fa-3x" style="color:#875A7B;"></span>
-            <h4 class="oe_mt16"><b>Per-POS Config</b></h4>
-            <p>Different POS shops can have different stock restriction settings.</p>
-        </div>
-        <div class="oe_span4 text-center">
-            <span class="fa fa-shield fa-3x" style="color:#875A7B;"></span>
-            <h4 class="oe_mt16"><b>Lightweight</b></h4>
-            <p>Only 2 boolean fields added. No heavy dependencies or performance impact.</p>
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:24px; font-weight:600;">Why Choose This Module?</h2>
+        <div class="row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; padding:0 20px;">
+            <div class="col-sm-3" style="text-align:center; padding:20px;">
+                <span class="fa fa-check-circle fa-2x" style="color:#27AE60;"></span>
+                <h4 style="margin-top:10px; font-weight:600;">100% Free</h4>
+                <p style="color:#666; font-size:13px;">No hidden costs. LGPL-3 licensed. Free forever.</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; padding:20px;">
+                <span class="fa fa-rocket fa-2x" style="color:#3498DB;"></span>
+                <h4 style="margin-top:10px; font-weight:600;">Odoo 18 Ready</h4>
+                <p style="color:#666; font-size:13px;">Works with both Community and Enterprise editions.</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; padding:20px;">
+                <span class="fa fa-feather fa-2x" style="color:#875A7B;"></span>
+                <h4 style="margin-top:10px; font-weight:600;">Lightweight</h4>
+                <p style="color:#666; font-size:13px;">Only 2 boolean fields. Zero performance impact.</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; padding:20px;">
+                <span class="fa fa-life-ring fa-2x" style="color:#E74C3C;"></span>
+                <h4 style="margin-top:10px; font-weight:600;">Email Support</h4>
+                <p style="color:#666; font-size:13px;">Direct developer support via email.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#875A7B;">Need Help?</h2>
-        <h3 class="oe_slogan">For support, bug reports, or feature requests</h3>
-        <p class="oe_slogan">
+        <h2 class="oe_slogan" style="color:#875A7B; font-size:22px; font-weight:600;">Need Help or Have Suggestions?</h2>
+        <p class="oe_slogan" style="font-size:15px;">
             <b>Email:</b> <a href="mailto:numanabdullah758@gmail.com">numanabdullah758@gmail.com</a><br/>
             <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/numan-abdullah/" target="_blank">linkedin.com/in/numan-abdullah</a>
         </p>
         <p class="oe_slogan" style="font-size:14px; color:#888;">
-            If you find this module useful, please leave a rating on the Odoo App Store!
+            If you find this module useful, please leave a <b>star rating</b> on the Odoo App Store — it helps a lot!
         </p>
     </div>
 </section>
