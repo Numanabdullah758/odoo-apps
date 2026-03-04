@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'POS Out of Stock Validation - Block Zero Quantity Sales',
+    'name': 'POS Restrict Zero Quantity | POS Restriction For Zero Quantity',
     'version': '18.0.1.0.0',
     'category': 'Sales/Point of Sale',
     'summary': 'Block POS payment for out-of-stock products with real-time '
