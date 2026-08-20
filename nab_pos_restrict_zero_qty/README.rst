@@ -1,5 +1,5 @@
 =============================================
-POS Out of Stock Validation (Odoo 18)
+POS Out of Stock Validation (Odoo 19)
 =============================================
 
 Block Point of Sale payments for products with zero or negative stock.
@@ -19,7 +19,7 @@ Configuration
 -------------
 
 1. Go to **Point of Sale > Configuration > Settings**.
-2. Enable **Zero Quantity Product Validation**.
+2. Under **Inventory**, enable **Zero Quantity Product Validation**.
 3. Optionally enable **Show Warning Per Product** for individual alerts.
 
 Usage
@@ -32,7 +32,7 @@ insufficient quantity, payment is blocked and a warning dialog is shown.
 Compatibility
 -------------
 
-* Odoo 18 Community & Enterprise
+* Odoo 19 Community & Enterprise
 
 Bug Tracker
 -----------

@@ -2,21 +2,18 @@
 # Copyright 2025 Numan Abdullah
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    """Extend settings to expose POS zero-quantity restriction toggle."""
-    _name = 'res.config.settings'
-    _inherit = ['res.config.settings', 'pos.load.mixin']
+    """Expose POS zero-quantity restriction toggles in Settings."""
+    _inherit = 'res.config.settings'
 
-    enable_pos_restrict_zero_qty = fields.Boolean(
+    pos_enable_pos_restrict_zero_qty = fields.Boolean(
         related='pos_config_id.enable_pos_restrict_zero_qty',
         readonly=False,
     )
-
-    @api.model
-    def _load_pos_data_fields(self, config_id):
-        result = super()._load_pos_data_fields(config_id)
-        result.append('enable_pos_restrict_zero_qty')
-        return result
+    pos_enable_per_product_warning = fields.Boolean(
+        related='pos_config_id.enable_per_product_warning',
+        readonly=False,
+    )

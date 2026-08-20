@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'POS Restrict Zero Quantity | POS Restriction For Zero Quantity',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Sales/Point of Sale',
     'summary': 'Block POS payment for out-of-stock products with real-time '
                'stock check, zero quantity restriction & configurable warnings',
@@ -42,11 +42,11 @@ point of sale stock, point of sale inventory check, pos oversell prevention
     'support': 'numanabdullah758@gmail.com',
     'depends': ['point_of_sale', 'stock'],
     'data': [
-        'views/pos_config_view.xml',
+        'views/res_config_settings_views.xml',
     ],
     'assets': {
         'point_of_sale._assets_pos': [
-            'nab_pos_restrict_zero_qty/static/src/app/models/models.js',
+            'nab_pos_restrict_zero_qty/static/src/overrides/**/*',
         ],
     },
     'images': [
